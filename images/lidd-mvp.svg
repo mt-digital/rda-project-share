@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="lidd-mvp.svg"
+   inkscape:export-filename="/Users/mturner/workspace/rda-proj-share/images/lidd-mvp.png"
+   inkscape:export-xdpi="100"
+   inkscape:export-ydpi="100">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="222.91179"
+     inkscape:cy="466.08163"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1436"
+     inkscape:window-height="855"
+     inkscape:window-x="5"
+     inkscape:window-y="1"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g2997"
+       style="stroke-width:5;stroke-miterlimit:4;stroke-dasharray:none;fill:none;stroke:#00d47d;stroke-opacity:1">
+      <path
+         sodipodi:nodetypes="cccc"
+         inkscape:connector-curvature="0"
+         id="path2985"
+         d="m 383.73182,338.27652 -267.81748,436.02847 538.03513,0 z"
+         style="fill:none;stroke:#00d47d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2987"
+         d="m 305,464.36218 156,0"
+         style="fill:none;stroke:#00d47d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2989"
+         d="m 242,566.36218 283,0"
+         style="fill:none;stroke:#00d47d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+      <path
+         inkscape:connector-curvature="0"
+         id="path2991"
+         d="m 180,670.36218 407,0"
+         style="fill:none;stroke:#00d47d;stroke-width:5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#180080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="165"
+       y="740.36218"
+       id="text2993"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan2995"
+         x="165"
+         y="740.36218"
+         style="font-weight:bold">Metadata Ingestion</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3771"
+       y="608.36218"
+       x="271"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#180080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-weight:bold"
+         y="608.36218"
+         x="271"
+         id="tspan3773"
+         sodipodi:role="line">MongoDB</tspan><tspan
+         style="font-weight:bold"
+         y="658.36218"
+         x="271"
+         sodipodi:role="line"
+         id="tspan3775">Datastore</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#180080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="381.01172"
+       y="504.36218"
+       id="text3777"
+       sodipodi:linespacing="125%"><tspan
+         id="tspan3781"
+         sodipodi:role="line"
+         x="387.96484"
+         y="504.36218"
+         style="font-weight:bold;text-align:center;text-anchor:middle">REST </tspan><tspan
+         sodipodi:role="line"
+         x="381.01172"
+         y="554.36218"
+         style="font-weight:bold;text-align:center;text-anchor:middle"
+         id="tspan3785">API</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3787"
+       y="430.36218"
+       x="379.01172"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#180080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         style="font-weight:bold;text-align:center;text-anchor:middle"
+         y="430.36218"
+         x="379.01172"
+         sodipodi:role="line"
+         id="tspan3795">UI</tspan></text>
+    <path
+       style="opacity:0.58333333;fill:#9292ff;fill-opacity:1;stroke:none"
+       d="M 383,342.36218 247.65864,772.89771 120.28249,771.83705 z"
+       id="path3799"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="140.69531"
+       y="433.36218"
+       id="text3801"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3803"
+         x="140.69531"
+         y="433.36218"
+         style="font-size:32px;text-align:center;text-anchor:middle;font-weight:bold;fill:#9292ff;fill-opacity:1;-inkscape-font-specification:Sans Bold Italic;font-family:Sans;font-style:italic;font-stretch:normal;font-variant:normal">LIDD</tspan><tspan
+         sodipodi:role="line"
+         x="140.69531"
+         y="473.36218"
+         id="tspan3805"
+         style="font-size:32px;text-align:center;text-anchor:middle;font-weight:bold;fill:#9292ff;fill-opacity:1;-inkscape-font-specification:Sans Bold Italic;font-family:Sans;font-style:italic;font-stretch:normal;font-variant:normal">Minimum</tspan><tspan
+         sodipodi:role="line"
+         x="140.69531"
+         y="513.36218"
+         id="tspan3807"
+         style="font-size:32px;text-align:center;text-anchor:middle;font-weight:bold;fill:#9292ff;fill-opacity:1;-inkscape-font-specification:Sans Bold Italic;font-family:Sans;font-style:italic;font-stretch:normal;font-variant:normal">Viable</tspan><tspan
+         sodipodi:role="line"
+         x="140.69531"
+         y="553.36218"
+         id="tspan3809"
+         style="font-size:32px;text-align:center;text-anchor:middle;font-weight:bold;fill:#9292ff;fill-opacity:1;-inkscape-font-specification:Sans Bold Italic;font-family:Sans;font-style:italic;font-stretch:normal;font-variant:normal">Product</tspan></text>
+    <path
+       style="fill:none;stroke:#9292ff;stroke-width:3.12500000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="M 369.90999,339.45219 200.09001,436.27217"
+       id="path3811"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#9292ff;stroke-width:3.12500000000000000;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 122,570.36218 -11,192"
+       id="path3813"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

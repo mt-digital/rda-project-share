@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LIDD - Linked Interdisciplinary Data Discovery</title>
+  <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+  <meta name="author" content="Matthew Turner">
+
+    <style>
+      .outline { text-decoration: underline; }
+    </style>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="white-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="reveal.js/css/reveal.css">
+  <link rel="stylesheet" href="reveal.js/css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="reveal.js/lib/css/zenburn.css">
+
+
+  <!-- Printing and PDF exports -->
+  <script>
+          var link = document.createElement( 'link' );
+          link.rel = 'stylesheet';
+          link.type = 'text/css';
+          link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal.js/css/print/pdf.css' : 'reveal.js/css/print/paper.css';
+          document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/bower_components/octicons/octicons/octicons.css">
+    <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<body>
+
+  <div class="reveal">
+    <div class="slides">
+
+      <section>
+        <h3>LIDD: Linked Interdisciplinary Data Discovery</h3>
+        <p style="font-size:.7em">Matthew Turner, Rebecca Koskela, Mary Vardigan, David Dubin, Lucas Sheneman</p>
+        <img src="images/lidd_branding.png" alt=""/>
+        <blockquote><b>Aim for the chopping block</b> <br>from "The Writing Life" by Annie Dillard</blockquote>
+      </section>
+
+      <section>
+        <h4>LIDD: Enable data discovery from diverse repositories</h4>
+        <ol>
+          <li class="fragment">Start with two: Interuniversity Consortium for Political and Social Research (ICPSR) and the Data Observation Network for Earth, DataONE
+          </li>
+          <li class="fragment">How can linked data improve this discovery and management?</li>
+          <li class="fragment">How could the standard-of-standards Health Care and Life Sciences (HCLS) community profile help?</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h4>My Development Philosophy</h4>
+        <p>Rapid prototyping, fail fast, with "minimum viable products"</p>
+          <img style="width:80%" src="images/minimum_viable_product.png" 
+               alt="Minimum Viable Product">
+      </section>
+
+      <section>
+        <h3>User Stories</h3>
+        <ol>
+          <li><span style="text-decoration:underline"><b>Who</b></span> wants to do</li>
+          <li><span style="text-decoration:underline"><b>what</b></span>, and</li>
+          <li><span style="text-decoration:underline"><b>why</b></span>?</li>
+        </ol>
+        <hr style="border-width: 5px;font-color:black">
+        <h4>Example:</h4>
+        <p>As a natural resource manager, I need to evaluate scientific data, the sentiments of my community, and any other relevant data, in order to choose a course of action for how to protect an endangered species while allowing public access to a particular resource</p>
+      </section>
+        
+      <section>
+        <h2>My current projects</h2>
+        <hr style="border-width: 5px;font-color:black">
+        <div class="col-md-4 col-sm-4 col-xs-4" class="project">
+          <h4><a href="https://vw.northwestknowledge.net">Virtual Watershed</a></h4>
+          <a href="https://github.com/VirtualWatershed">VirtualWatershed (GitHub Org)</a>
+          <img src="images/vw-webapp.png" alt="">
+          <p style="font-size:.6em">With Western Consortium for Watershed Analysis, Visualization, and Exploration</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4" class="project">
+          <h4>NKN mdedit</h4>
+          <a href="https://github.com/northwest-knowledge-network/mdedit">NKN/mdedit</a>
+          <img src="images/mdedit-11-16.png" alt="">
+          <p style="font-size:.6em">With Northwest Knowledge Network teammates</p>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-4" class="project">
+          <h4><a href="https://mt.northwestknowledge.net/lidd">LIDD</a></h4>
+          <a href="https://github.com/mtpain/lidd">mtpain/lidd</a>
+          <a href="https://github.com/mtpain/rda-lod">mtpain/rda-lod</a>
+          <img src="images/lidd-screenshot-11-16.png" alt="">
+          <p style="font-size:.6em">With Northwest Knowledge Network teammates</p>
+        </div>
+      </section>
+
+      <!--<section>-->
+        <!--<h2 class="outline">Outline</h2>-->
+        <!--<ol id="outline">-->
+          <!--<li>LIDD Overview</li>-->
+          <!--<li>"Metadata Standards"</li>-->
+            <!--<ul>-->
+              <!--<li>Visualizing Standards</li>-->
+              <!--<li>2 not 105: EML and DDI</li>-->
+            <!--</ul>-->
+          <!--<li>Future of LIDD</li>-->
+        <!--</ol>-->
+      <!--</section>-->
+
+      <section>
+        <h2>Part One: LIDD Prototype</h2>
+      </section>
+
+      <section>
+        <h3>The RDA P6 Prototype</h3>
+        <img src="images/lidd-mvp.png" alt="LIDD Minimum Viable Product"/>
+      </section>
+
+      <section>
+        <h2>Prototype Schematic</h2>
+        <img style="width:100%" src="images/11-16-lidd-schematic.jpg" alt=""/>
+      </section>
+
+      <section>
+        <h2>Web app</h2>
+        <a href="https://mt.northwestknowledge.net/lidd">https://mt.northwestknowledge.net/lidd</a>
+        <a href="https://mt.northwestknowledge.net/lidd">
+          <img src="images/lidd-screenshot-11-16.png" alt="">
+        </a>
+      </section>
+
+      <section>
+        <h2>REST API</h2>
+        <p style="font-size:.8em">
+          <a href="https://mt.northwestknowledge.net/lidd/api">
+            https://mt.northwestknowledge.net/lidd/api
+          </a>
+        </p>
+        <a href="https://mt.northwestknowledge.net/lidd/api">
+          <img style="width:40%" src="images/swagger-ui-screenshot.png" alt=""/>
+        </a>
+        </h4>
+        <p>Documentation and examples above built with 
+          <a href="http://swagger.io/swagger-ui/">Swagger</a>
+        </p>
+        <a href="http://swagger.io/swagger-ui/">
+          <img style="width:80%" src="images/swagger-banner.png" alt=""/>
+        </a>
+      </section>
+
+      <section>
+        <h2>
+          Part Two: Metadata...
+        </h2>
+          <h3>
+            <ul>
+              <li>Normalization</li> 
+              <li>Harmonization</li>
+              <li>Carpentry</li>
+              <li>Magic</li>
+            </ul>
+          </h3>
+      </section>
+
+
+      <!--<section>-->
+        <!--<h3>What is a "metadata standard"?</h2>-->
+        <!--<h4>105 metadata standards?</h3>-->
+        <!--<img src="images/zoomed-seeing-standards.png" style="width:50%" alt=""/>-->
+        <!--<p class="fragment" style="color:red;font-size:.7em;">-->
+          <!--* These boxed items are not "standards", they are technologies.-->
+        <!--</p>-->
+        <!--<p class="fragment" style="color:red;font-size:.7em;">-->
+          <!--* The problem is hard enough -- let's not make it harder.-->
+        <!--</p>-->
+      <!--</section>-->
+
+
+      <section>
+        <h2>ICPSR: DDI metadata standard</h2>
+        <h4>DDI - Data Documentation Initiative</h4>
+        <p>
+          "international effort to create a standard to describe statistical 
+          and social science data"
+        </p>
+        <p class="fragment">But how useful is it for enabling data discovery and re-use?</p>
+        <pre><code class="fragment xml hljs" data-trim>
+<sumDscr>
+  ...
+  <nation>Please see geographic coverage.</nation>
+  <geogCover>France</geogCover>
+  <geogCover>Global</geogCover>
+  <geogCover>Paris</geogCover>
+  ...
+</sumDscr>
+        </code></pre>
+        <pre><code class="fragment xml hljs" data-trim contenteditable>
+<timePrd event="start" date="1862" cycle="P1">
+</timePrd>
+<timePrd event="end" date="1865" cycle="P1">
+</timePrd>
+        </code></pre>
+      </section>
+
+
+      <section>
+        <h2>DataONE: EML, Dublin Core, FGDC</h2>
+        <h4>EML - Ecological Metadata Language</h4>
+        <p>Parsing guided by 
+        <a href="https://knb.ecoinformatics.org/#external//emlparser/docs/eml-2.1.1">
+          the documentation hosted by the Knowledge Network for Biocomplexity</a>
+        </p>
+        <pre><code class="xml hljs" data-trim contenteditable>
+<temporalCoverage scope="document">
+    <singleDateTime>
+        <calendarDate>
+            1988
+        </calendarDate>
+    </singleDateTime>
+</temporalCoverage>
+        </code></pre>
+        <pre><code class="xml hljs" data-trim contenteditable>
+<temporalCoverage>
+  <rangeOfDates>
+    <beginDate>
+      <calendarDate>1953</calendarDate>
+    </beginDate>
+    <endDate>
+      <calendarDate>2006</calendarDate>
+    </endDate>
+  </rangeOfDates>
+</temporalCoverage>
+        </code></pre>
+      </section>
+
+      <!--<section>-->
+        <!--<h2>Normalized Metadata</h2>-->
+        <!--<img src="images/normalize_scheme.png" alt=""/>-->
+      <!--</section>-->
+
+
+      <section>
+        <h2>Normalized Metadata</h2>
+        <a href="https://github.com/mtpain/rda-lod/blob/master/app/models.py">app/models.py</a>
+        <pre class="stretch"><code class="python hljs" data-trim>
+class NormalizedMetadata(db.Document):
+    """
+    Model served by the API to consumers. It has been normalized: parsed from
+    whatever the metadata's native format and extracted to the currently
+    supported terms. Imported to ../parsers for creating app-ready normalized
+    metadata.
+    """
+    raw = db.StringField(required=True)
+
+    title = db.StringField(required=True)
+    start_datetime = db.DateTimeField(required=True)
+    end_datetime = db.DateTimeField(required=True)
+
+    identifier = db.StringField(max_length=100)
+
+    # allow a list of standards in case they do indeed meet multiple standards
+    metadata_standard = db.ListField(
+        db.EmbeddedDocumentField('MetadataStandard')
+    )
+        </code></pre>
+      </section>
+
+      <section>
+        <h2>ICPSR Parser</h2>
+        <a href="https://github.com/mtpain/rda-lod/blob/master/parsers/icpsr.py">parsers/icpsr.py</a>
+        <pre class="stretch"><code class="python hljs">
+...
+
+from app.models import NormalizedMetadata
+
+...
+
+def make_normalized_icpsr(icpsr_file=None):
+
+      raw = RawICPSR(icpsr_file)
+      date_range = NormalizedDateEntry(raw)
+      geo_center = _extract_geo_center(raw)
+      start_date = date_range.start_time
+      end_date = date_range.end_time
+
+      title = _extract_title(raw)
+      abstract = _extract_abstract(raw)
+      identifier = _extract_identifier(raw)
+
+      doc = dict(
+          raw=raw.text,
+          title=title,
+          abstract=abstract,
+          identifier=identifier,
+          geo_center=geo_center,
+          start_datetime=start_date.isoformat(),
+          end_datetime=end_date.isoformat(),
+          metadata_standard=[{
+              'name': 'DDI', 'reference': DDI_DOC_URL
+              }]
+          )
+
+      # the normalized context is common among all records, by definition
+      document_str = json.dumps(doc=normalized,
+                                native_context=DDI_NORMALIZED_FIELDS
+      )
+
+      return NormalizedMetadata.from_json(document_str)
+        </code></pre>
+      </section>
+      
+      <section>
+        <h2>HCLS: W3C Linked Metadata Guidance</h2>
+        <a href="http://www.w3.org/2001/sw/hcls/notes/hcls-dataset/">HCLS - Health Care and Life Sciences W3C</a>
+        <p>
+            "a guide to indicate what are the essential metadata, and the manner 
+            in which we can express it"
+        </p>
+          <hr/>
+        <p>
+          Unfortunately HCLS does not explicitly include geographical information.
+          <hr/>
+        </p>
+          There is no restriction on adding additional fields. Linked data
+          allows us to transparently add new fields as long as we define them
+          or link to existing definitions...
+        </p>
+      </section>
+
+
+      <section>
+        <h2>JSON-LD, HCLS, Normalized Metadata</h2>
+        <a href="https://mt.northwestknowledge.net/lidd/api/metadata/55ef8b96933da5757a9c83eb/jsonld">
+          https://mt.northwestknowledge.net/lidd/api/metadata/55ef8b96933da5757a9c83eb/jsonld
+        </a>
+          <pre class="stretch"><code class="json hljs" data-trim>
+{
+  "@context": 
+  {
+  "cito": "http://purl.org/spar/cito/",
+  "dbpedia": "http://mappings.dbpedia.org/index.php/OntologyProperty:",
+  "dbpedia:EndDateTime": 
+    {
+      "@type": "xsd:dateTime",
+      "rdfs:comment@en": "ISO 8601 formatted start date and time",
+      "rdfs:label@en": "start date and time"
+    },
+  "dbpedia:StartDateTime": 
+    {
+      "@type": "xsd:dateTime",
+      "rdfs:comment@en": "ISO 8601 formatted start date and time",
+      "rdfs:label@en": "start date and time"
+    },
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dct": "http://purl.org/dc/terms/",
+    "dctypes": "http://purl.org/dc/dcmitype/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "freq": "http://purl.org/cld/freq/",
+    "idot": "http://identifiers.org/terms#",
+    "lexvo": "http://lexvo.org/ontology#",
+    "lidd": "https://mt.northwestknowledge.net/lidd/terms#",
+    "pav": "http://purl.org/pav/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "sd": "http://www.w3.org/ns/sparql-service-description#",
+    "vann": "http://purl.org/vocab/vann/",
+    "void": "http://rdfs.org/ns/void#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  }, //end of context
+  "dbpedia:EndDateTime": "1997-11-08T00:00:00",
+  "dbpedia:StartDateTime": "1997-07-08T00:00:00",
+  "dcat:accessURL": "https://mt.northwestknowledge.net/lidd/api/metadata/55ef8b96933da5757a9c83eb",
+  "dcat:downloadURL": "https://mt.northwestknowledge.net/lidd/api/metadata/55ef8b96933da5757a9c83eb/raw",
+  "dct:title": "Experiment to Enhance the Reporting of Drug Use by Arrestees in Cleveland, Detroit, and Houston, 1997",
+  "void:dataDump": "https://mt.northwestknowledge.net/lidd/api/metadata/55ef8b96933da5757a9c83eb/rdf"
+}          
+          </code></pre>
+      </section>
+
+
+      <section>
+        <h2>JSON-LD, HCLS, Normalized Metadata</h2>
+        <p>Implemented as class method of <span><code>NormalizedMetadata</code></span><p>
+        <pre style="font-size:16px" class="stretch"><code class="python hljs" data-trim>
+from pyld import jsonld
+
+...
+
+class NormalizedMetadata:
+
+...
+
+  def to_jsonld(self):
+      """
+      Use metadata_standard.specification_root to build an expanded jsonld
+      metadata record
+      """
+      namespaced = {
+          'dct:title': self.title,
+          'dbpedia:StartDateTime': self.start_datetime.isoformat(),
+          'dbpedia:EndDateTime': self.end_datetime.isoformat(),
+
+          'dcat:accessURL':
+              'https://mt.northwestknowledge.net'
+              '/lidd/api/metadata/{}'.format(self.id),
+
+          'dcat:downloadURL':
+              'https://mt.northwestknowledge.net'
+              '/lidd/api/metadata/{}/raw'.format(self.id),
+
+          'void:dataDump':
+              'https://mt.northwestknowledge.net'
+              '/lidd/api/metadata/{}/rdf'.format(self.id)
+      }
+
+      context = HCLS_PLUS_CONTEXT
+      return jsonld.compact(namespaced, context, {'expandContext': context})
+        </code></pre>
+      </section>
+
+
+      <section>
+        <h3>Aside: Technologies</h3>
+        <ol>
+          <li>MongoDB: Freedom, intuitive data model in a format that can propogate through the whole stack (JSON, GeoJSON)</li>
+          <li>Flask: Flexibility, prototype speed, and Python</li>
+          <li>Angular: Templating and transparent data/DOM binding</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h2>Flask REST API</h2>
+        <p>
+          REST - REpresentational State Transfer. Important for us in the 
+          design of our API endpoints, or <em>resources</em>.
+        </p>
+        <pre><code class="python hljs" data-trim>
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello World!'
+
+if __name__ == '__main__':
+    app.run() 
+        </code></pre>
+        <p>...save as <code>hello.py</code> and run with python</p>
+        <pre><code class="bash hljs" data-trim>
+$ python hello.py
+ * Running on http://127.0.0.1:5000/
+        </code></pre>
+      </section>
+
+
+      <section>
+        <h3>Rubyists are the coolest coder kids...</h3>
+        <img src="images/sinatra.png" alt="Ol' Blue Eyes">
+      </section>
+
+      
+      <section>
+        <a href="https://docs.angularjs.org/tutorial">
+          <h2>Angular Tutorial</h2>
+        </a>        
+        <p>
+          Learn about Angular plus unit tests, end-to-end testing, 
+          and client-side dependency management.
+        </p>
+        <a href="https://docs.angularjs.org/tutorial">
+          <img src="images/angular_tutorial.png" alt="">
+        </a>
+      </section>
+
+
+      <section>
+        <h2>Methods for harmonizing metadata standards</h2>
+        <ol>
+          <li>Normalization</li>
+          <li>Linked data to let the standards speak for themselves without ambiguity</li>
+          <li>
+            Either way has its complications
+          </li>
+          <li>Normalization has most immediate payoff</li>
+          <li>Optimal(?): normalize a set of standards and look for suggestions of generalization. Develop tool with perpendicular components so the API and webapp can remain unchanged if the backend changes</li>
+        </ol>
+      </section>
+
+
+      <section>
+        <h3>(Back to) the Future</h3>
+        <ol style="font-size:.9em">
+          <li>Support all three DataONE metadata standards</li>
+          <li class="fragment">Build Functional Linked Data Model exposed through API and web app (Apache Jena)</li>
+          <li class="fragment">Add user space with 
+            <a href="http://orcid.org/">ORCiD</a> OAuth2 authentication; integrate with ORCiD for personalized data recommendations
+            suggestions based on past research
+          </li>
+          <li class="fragment">
+            Add law data through <a href="https://www.courtlistener.com/api">
+              Court Listener API</a> (or other relevant data source based on new user stories)
+          </li>
+        </ol>
+        <img style="width:40%" src="images/DocHD.jpg" alt=""/>
+      </section>
+
+    <!-- End of slides -->
+    </div>
+  </div>
+
+  
+  <script src="reveal.js/lib/js/head.min.js"></script>
+  <script src="reveal.js/js/reveal.js"></script>
+
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      width: 1100,
+      height: 700,
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: 'convex', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        { src: 'reveal.js/lib/js/classList.js', 
+          condition: function() { return !document.body.classList; } },
+        { src: 'reveal.js/plugin/markdown/marked.js', 
+          condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/markdown/markdown.js', 
+          condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        { src: 'reveal.js/plugin/highlight/highlight.js', async: true, 
+          condition: function() { return !!document.querySelector( 'pre code' ); }, 
+          callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'reveal.js/plugin/zoom-js/zoom.js', async: true },
+        { src: 'reveal.js/plugin/notes/notes.js', async: true }
+      ]
+    });
+
+  </script>
+</body>
+</html>

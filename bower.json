@@ -1,0 +1,24 @@
+{
+  "name": "nkn-10-22-15",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mtpain/rda-ehm-wg",
+  "authors": [
+    "Matthew Turner <maturner01@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests",
+    "bower_components"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "octicons": "~3.3.0"
+  }
+}
