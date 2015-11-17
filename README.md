@@ -9,7 +9,7 @@ You can run the slides yourself after just a few steps:
 including Bower: `npm
 install`
 3. Install some other dependencies using bower: `bower install`
-4. Start a development web server by typing `grunt serve` at the command line. Then visit http://localhost:8000.
+4. Start a development web server by typing `grunt serve` at the command line. Then visit [http://localhost:8000](http://localhost:8000).
 
 Node and Bower know what to install because of the files
 `package.json` and `bower.json`.
